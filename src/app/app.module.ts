@@ -7,9 +7,11 @@ import { CalendarModule } from 'primeng/calendar';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { WorkoutComponent } from './workout/workout/workout.component';
+import { UserProfileComponent } from './user-profile/user-profile/user-profile.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, WorkoutComponent, UserProfileComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
