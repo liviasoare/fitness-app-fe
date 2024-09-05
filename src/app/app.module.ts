@@ -7,18 +7,20 @@ import { CalendarModule } from 'primeng/calendar';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { WorkoutComponent } from './workout/workout/workout.component';
-import { UserProfileComponent } from './user-profile/user-profile/user-profile.component';
+import { WorkoutComponent } from "./modules/workout/workout/workout.component";
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [AppComponent, WorkoutComponent, UserProfileComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     ButtonModule,
     CardModule,
-  ],
+    WorkoutComponent
+],
   providers: [],
   bootstrap: [AppComponent],
 })
