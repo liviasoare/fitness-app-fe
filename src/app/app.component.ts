@@ -15,4 +15,8 @@ export class AppComponent {
   getWorkouts() {
     this.workoutsService.getWorkouts().subscribe((res) => console.log(res));
   }
+
+  onUpload(event: any) {
+    console.log('it works');
+  }
 }
